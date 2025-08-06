@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: hexlet.code
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  output:
+    ansi:
+      enabled: always
+  profiles:
+    active: dev
+
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
+
+server:
+  address: 0.0.0.0
+
+sentry:
+  dsn: "https://2b8668d995f12eccabc1efaa20b72f9a@o4508930723479552.ingest.de.sentry.io/4508930786590800"
+  send-default-pii: true
+  traces-sample-rate: 1.0
